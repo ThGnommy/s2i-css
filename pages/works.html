@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/works.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Thomas Brandoli</title>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <section class="menu-container" id="menu-container">
+            <img id="thomas" src="../img/thomas.jpg" alt="me" />
+            <nav>
+                <a href="../index.html">HOME</a>
+                <a href="./works.html">WORKS</a>
+                <a href="#">CONTACT ME</a>
+            </nav>
+        </section>
+
+        <section class="right-section">
+
+            <div class="menu-btn" id="menu-btn" onclick="handleOpenMenu()"></div>
+
+            <h2 class="work-title">WORKS</h2>
+
+            <div class="works-container">
+                <div>
+                    <a class="work-link" href="#">gnommysound</a>
+                </div>
+                <div>
+                    <a class="work-link" href="">todo-list</a>
+                </div>
+                <div>
+                    <a class="work-link" href="">match-game</a>
+                </div>
+                <div>
+                    <a class="work-link" href="">web-audio-player</a>
+                </div>
+                <div>
+                    <a class="work-link" href="">metastases</a>
+                </div>
+                <div>
+                    <a class="work-link" href="">metastases</a>
+                </div>
+            </div>
+            
+        </section>
+
+    </div>
+</body>
+</html>
+
+
+<script>
+
+    const menuContainer = document.getElementById('menu-container');
+
+    handleOpenMenu = () => {
+        menuContainer.classList.toggle('menu-open')
+    }
+
+</script>

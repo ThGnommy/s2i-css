@@ -1,0 +1,153 @@
+html {
+    font-size: calc(1em + 0.5vw);
+    line-height: calc(1.1em + 0.5vw);
+}
+
+body {
+    text-align: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    color: #E5E5E5;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+    background-color: #14213D;
+    border-right: 1px solid #E5E5E5;
+    align-items: center;
+    justify-content: space-around;
+    transition: left 1s;
+}
+
+@media screen and (max-width: 600px) {
+
+    .menu-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 100vh;
+        background-color: #14213D;
+        border-right: 1px solid #E5E5E5;
+        align-items: center;
+        justify-content: space-around;
+        overflow-x: hidden;
+        transition: left 1s;
+        left: -270px;
+    }
+
+    .right-section {
+        width: 100vw!important;
+    }
+
+    .menu-btn {
+        display: block!important;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 5%;
+        left: 5%;
+        background-color: tomato;
+    }
+
+    .menu-open {
+        left: 0;
+    }
+
+    .icons-container {
+        width: 40vw!important;
+    }
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: none;
+    position: absolute;
+}
+
+nav a {
+    padding: 5px;
+    text-decoration: none;
+    color: #E5E5E5;
+    background: linear-gradient(to right, #FCA311, #FCA311 50%, #14213D 50%);
+    background-size: 250% 100%;
+    background-position: 100%;
+    transition: background-position 300ms ease-in-out;
+}
+
+nav a:hover {
+    background-position: 0 100%;
+}
+
+
+#thomas {
+    height: 20vh;
+    border-radius: 50%;
+    /* border: 8px solid rgba(252, 163, 17, 1); */
+    animation: border 1s infinite alternate;
+}
+
+
+.menu-btn {
+    position: absolute;
+    display: none;
+    width: 40px;
+    height: 40px;
+    top: 5%;
+    left: 5%;
+    background-color: tomato;
+}
+
+.right-section {
+    display: flex;
+    width: 80vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+
+.right-section > * {
+    padding: 20px;
+}
+
+h2 {
+    display: block;
+    color: #000000;
+    font-family: 'Oswald', sans-serif;
+    animation: test 1s infinite ease-out;
+}
+
+p.home-rs {
+    color: #FCA311;
+}
+
+.fa-github, .fa-linkedin {
+    color: #14213D;
+}
+
+.icons-container {
+    width: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
