@@ -24,28 +24,38 @@
 
         <section class="right-section">
 
-            <div class="menu-btn" id="menu-btn" onclick="handleOpenMenu()"></div>
+            <div class="menu-icon-container" onclick="handleOpenMenu(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
 
-            <h2 class="work-title">WORKS</h2>
-
+            <h2>WORKS</h2>
+            
             <div class="works-container">
                 <div>
-                    <a class="work-link" href="#">gnommysound</a>
+                    <p>Game Audio Portfolio Website</p>
+                    <a class="work-link" href="#">Link</a>
                 </div>
                 <div>
-                    <a class="work-link" href="">todo-list</a>
+                    <p> React To Do List</p>
+                    <a class="work-link" href="">Link</a>
                 </div>
                 <div>
-                    <a class="work-link" href="">match-game</a>
+                    <p>jQuery Match-Game</p>
+                    <a class="work-link" href="">Link</a>
                 </div>
                 <div>
-                    <a class="work-link" href="">web-audio-player</a>
+                    <p>Web Audio API - Web Audio Player</p>
+                    <a class="work-link" href="">Link</a>
                 </div>
                 <div>
-                    <a class="work-link" href="">metastases</a>
+                    <p>Metastases Algorithm</p>
+                    <a class="work-link" href="">Link</a>
                 </div>
                 <div>
-                    <a class="work-link" href="">metastases</a>
+                    <p>Vvviber - Free React Project</p>
+                    <a class="work-link" href="">Link</a>
                 </div>
             </div>
             
@@ -60,8 +70,11 @@
 
     const menuContainer = document.getElementById('menu-container');
 
-    handleOpenMenu = () => {
+    handleOpenMenu = (icon) => {
+        
         menuContainer.classList.toggle('menu-open')
+        icon.classList.toggle('menu-open')
+
     }
 
 </script>
