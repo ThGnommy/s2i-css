@@ -82,7 +82,7 @@ h2 {
     font-family: 'Oswald', sans-serif;
 }
 
-.works-container {
+.contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,25 +90,43 @@ h2 {
     overflow: auto;
 }
 
-.works-container div {
+.contact-container div {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-direction: column;
-    width: 250px;
-    height: 250px;
+    flex-direction: row;
+    width: 300px;
+    height: 500px;
     margin: 10px;
     padding: 10px;
     outline: 0px solid #14213D;
     background:#14213D;
-    background-size: 400% 400%;
-    background-position: 0% 100%;
-    transition: background 300ms ease-in-out;
     transition: outline 300ms ease-in-out;
 }
 
-.works-container div:hover {
+.contact-container > div:hover {
     outline: 8px solid #FCA311;
+}
+
+.point-marker, .email, .telegram {
+    display: flex;
+    flex-direction: column!important;
+
+}
+
+.point-marker > div {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.telegram > a, .email > a {
+    color: #E5E5E5;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.telegram > a, .email > a {
+
 }
 
 .work-link {
@@ -121,13 +139,6 @@ h2 {
 
 .work-link:hover {
     color: #FCA311;
-}
-
-.icons-container {
-    width: 20vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 /* Style Scroll Bar */
