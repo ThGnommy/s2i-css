@@ -41,9 +41,41 @@ body {
         align-items: center;
         justify-content: space-around;
         overflow-x: hidden;
-        transition: left 1s;
+        transition: left 0.4s;
         left: -300px;
     }
+
+    .menu-icon-container {
+        display: block!important;
+        cursor: pointer;
+        position: absolute;
+        top: 2%;
+        left: 2%;
+    }
+
+    .line1, .line2, .line3 {
+        width: 35px;
+        height: 5px;
+        background-color: #14213D;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+
+    .menu-open .line1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+        background: #E5E5E5;
+    }
+
+    .menu-open .line2 {
+        opacity: 0;
+    }
+
+    .menu-open .line3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+        background: #E5E5E5;
+    }      
 
     .right-section {
         width: 100vw!important;
@@ -96,10 +128,8 @@ nav a:hover {
 
 
 #thomas {
-    height: 20vh;
+    padding: 20px;
     border-radius: 50%;
-    /* border: 8px solid rgba(252, 163, 17, 1); */
-    animation: border 1s infinite alternate;
 }
 
 

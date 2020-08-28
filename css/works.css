@@ -119,12 +119,9 @@ nav a:hover {
 
 
 #thomas {
-    height: 20vh;
+    padding: 20px;
     border-radius: 50%;
-    /* border: 8px solid rgba(252, 163, 17, 1); */
-    animation: border 1s infinite alternate;
 }
-
 
 .menu-btn {
     position: absolute;
@@ -174,23 +171,28 @@ h2 {
     height: 250px;
     margin: 10px;
     padding: 10px;
+    outline: 0px solid #14213D;
     background:#14213D;
     background-size: 400% 400%;
     background-position: 0% 100%;
     transition: background 300ms ease-in-out;
+    transition: outline 300ms ease-in-out;
 }
 
+.works-container div:hover {
+    outline: 8px solid #FCA311;
+}
 
 .work-link {
     display: flex;
     text-decoration: none;
     color: inherit;
     padding: 5px 10px;
-    transition: outline 350ms ease-in;
+    transition: color 350ms ease-in;
 }
 
 .work-link:hover {
-    outline: 2px solid #FCA311;
+    color: #FCA311;
 }
 
 .icons-container {
