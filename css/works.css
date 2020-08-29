@@ -395,3 +395,10 @@ h2 {
 @media screen and (max-width: 1199.98px) { 
 
 }
+
+@media screen and (min-width: 2074.98px) { 
+    .works-container > div {
+        height: 500px;
+        width: 300px;
+    }
+}

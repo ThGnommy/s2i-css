@@ -22,7 +22,6 @@ body {
     width: 20vw;
     height: 100vh;
     background-color: #14213D;
-    border-right: 1px solid #E5E5E5;
     align-items: center;
     justify-content: space-around;
     transition: left 1s;
@@ -106,10 +105,10 @@ p.home-rs {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 100px;
+    height: 150px;
 }
 
-.icons-container img {
+.icons-container a {
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -117,11 +116,16 @@ p.home-rs {
     transition: margin-bottom 0.4s;
 }
 
-.icons-container img:hover {
+.facebook, .linkedin, .github {
+    width: 50px;
+    height: 50px;
+}
+
+.icons-container a:hover {
     margin-bottom: 10px;
 }
 
-/* Background Animation */
+/*#region Background Animation */
 
 .background-area {
     position: absolute;
@@ -257,6 +261,8 @@ p.home-rs {
 
 }
 
+/*#endregion */
+
 /* Media Queries */
 
 @media screen and (max-width: 374.98px) { 
@@ -307,10 +313,6 @@ p.home-rs {
 
     .menu-open {
         left: 0;
-    }
-
-    .icons-container {
-        width: 40vw!important;
     }
 
     .line1, .line2, .line3 {

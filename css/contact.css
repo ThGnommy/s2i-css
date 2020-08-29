@@ -111,7 +111,6 @@ h2 {
 .point-marker, .email, .telegram {
     display: flex;
     flex-direction: column!important;
-
 }
 
 .point-marker > div {
@@ -125,8 +124,8 @@ h2 {
     cursor: pointer;
 }
 
-.telegram > a, .email > a {
-
+.telegram > a:hover, .email > a:hover {
+    text-decoration: underline #E5E5E5!important;
 }
 
 .work-link {
@@ -307,9 +306,9 @@ h2 {
 
 @media screen and (max-width: 374.98px) { 
     
-    .works-container > div {
-        width: 200px;
-        height: 200px;
+    .contact-container > div {
+        width: 250px;
+        height: 400px;
     }
     
     #thomas {
@@ -319,11 +318,6 @@ h2 {
 }
 
 @media screen and (max-width: 595.98px) { 
-
-    .works-container > div {
-        width: 300px;
-        height: 250px;
-    }
 
     #thomas {
         width: 40vw!important;
