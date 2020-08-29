@@ -61,9 +61,20 @@ nav a:hover {
     border-radius: 50%;
 }
 
+hr {
+    padding: 0!important;
+    margin: 10px 0;
+    width: 50vw!important;
+    border: 1px solid black;
+}
+
 .code {
     color: #000000;
     font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline #000000;
 }
 
 .menu-btn {
@@ -92,9 +103,21 @@ nav a:hover {
 
 h2 {
     display: block;
-    color: #000000;
+    color: #E5E5E5;
     font-family: 'Oswald', sans-serif;
-    animation: test 1s infinite ease-out;
+    font-size: xxx-large;
+    background-color: #FCA311;
+    padding: 0px 50px!important;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+h2:hover {
+    padding: 0px 25px!important;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 20px;
 }
 
 p.home-rs {
@@ -276,6 +299,10 @@ p.home-rs {
     #thomas {
         width: 40vw!important;
         height: 40vw!important;
+    }
+
+    h2 {
+        font-size: xx-large;
     }
 }
 
