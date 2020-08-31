@@ -109,7 +109,10 @@ h2 {
     background-color: #FCA311;
     padding: 0px 50px!important;
     border-radius: 5px;
-    transition: all 1s;
+    transition: border-top-left-radius 1s;
+    transition: border-top-right-radius 1s;
+    transition: border-bottom-left-radius 1s;
+    transition: border-bottom-right-radius 1s;
 }
 
 h2:hover {
