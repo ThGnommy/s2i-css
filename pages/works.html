@@ -1,83 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="theme-color" content="#FCA311" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../css/works.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../css/works.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <title>Thomas Brandoli</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="main-container">
+      <section class="menu-container" id="menu-container">
+        <img id="thomas" src="../img/thomas.jpg" alt="me" />
+        <nav>
+          <a href="../index.html">HOME</a>
+          <a href="./works.html">WORKS</a>
+          <a href="./contact.html">CONTACT ME</a>
+        </nav>
+      </section>
 
-        <section class="menu-container" id="menu-container">
-            <img id="thomas" src="../img/thomas.jpg" alt="me" />
-            <nav>
-                <a href="../index.html">HOME</a>
-                <a href="./works.html">WORKS</a>
-                <a href="./contact.html">CONTACT ME</a>
-            </nav>
-        </section>
+      <section class="right-section">
+        <div class="background-area">
+          <ul class="bkg-elements">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
 
-        <section class="right-section">
+        <div class="menu-icon-container" onclick="handleOpenMenu(this)">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
 
-            <div class="background-area">
-                <ul class="bkg-elements">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+        <h2>WORKS</h2>
 
-            <div class="menu-icon-container" onclick="handleOpenMenu(this)">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+        <div class="works-container">
+          <div>
+            <p>Another Weather Web Application</p>
+            <section class="technologies-container">
+              <i><p>javascript</p></i>
+              <i><p>paperCSS</p></i>
+              <i><p>geolocation api</p></i>
+            </section>
+            <a
+              class="work-link"
+              href="https://another-weather-application.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Link</a
+            >
+          </div>
+          <div>
+            <p>My Pexels</p>
+            <section class="technologies-container">
+              <i><p>react</p></i>
+              <i><p>context api</p></i>
+              <i><p>styled-components</p></i>
+              <i><p>framer-motion</p></i>
+              <i><p>pexels api</p></i>
+            </section>
+            <a
+              class="work-link"
+              href="https://my-pexels.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Link</a
+            >
+          </div>
+          <div>
+            <p>Google Book Finder</p>
+            <section class="technologies-container">
+              <i><p>react</p></i>
+              <i><p>redux</p></i>
+              <i><p>material-ui</p></i>
+              <i><p>google books api</p></i>
+            </section>
+            <a
+              class="work-link"
+              href="https://th-book-finder.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Link</a
+            >
+          </div>
+          <div>
+            <p>React & Firebase To Do List</p>
+            <section class="technologies-container">
+              <i><p>react</p></i>
+              <i><p>firestore</p></i>
+              <i><p>styled-components</p></i>
+            </section>
+            <a
+              class="work-link"
+              href="https://thgnommy.github.io/todo-app-react/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Link</a
+            >
+          </div>
 
-            <h2>WORKS</h2>
-            
-            <div class="works-container">
-                <div>
-                    <p>Game Audio Portfolio Website</p>
-                    <a class="work-link" href="https://gnommysound.netlify.app/" target="_blank" rel="noopener noreferrer">Link</a>
-                </div>
-                <div>
-                    <p> React & Firebase To Do List</p>
-                    <a class="work-link" href="https://thgnommy.github.io/todo-app-react/" target="_blank" rel="noopener noreferrer">Link</a>
-                </div>
-                <div>
-                    <p>jQuery Match-Game</p>
-                    <a class="work-link" href="https://thgnommy.github.io/Match-Game/" target="_blank" rel="noopener noreferrer">Link</a>
-                </div>
-                <div>
-                    <p>Web Audio API - Web Audio Player</p>
-                    <a class="work-link" href="https://thgnommy.github.io/web-audio-player/" target="_blank" rel="noopener noreferrer">Link</a>
-                </div>
-                <div>
-                    <p>Metastases Algorithm</p>
-                    <a class="work-link" href="https://metastases-algorithm.com/" target="_blank" rel="noopener noreferrer">Link</a>
-                </div>
-                <div>
-                    <p>Vvviber - Free React Project</p>
-                    <a class="work-link" href="https://vvviber.netlify.app/" target="_blank" rel="noopener noreferrer">Link</a>
-                </div>
-            </div>
-            
-        </section>
+          <div>
+            <p>jQuery Match-Game</p>
+            <section class="technologies-container">
+              <i><p>html & css</p></i>
+              <i><p>jQuery</p></i>
+            </section>
+            <a
+              class="work-link"
+              href="https://thgnommy.github.io/Match-Game/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Link</a
+            >
+          </div>
 
+          <div>
+            <p>Metastases Algorithm</p>
+            <section class="technologies-container">
+              <i><p>react</p></i>
+              <i><p>materialize css</p></i>
+            </section>
+            <a
+              class="work-link"
+              href="https://metastases-algorithm.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Link</a
+            >
+          </div>
+
+          <div>
+            <p>Game Audio Portfolio Website</p>
+            <section class="technologies-container">
+              <i><p>html & css</p></i>
+              <i><p>bootstrap</p></i>
+            </section>
+            <a
+              class="work-link"
+              href="https://gnommysound.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Link</a
+            >
+          </div>
+        </div>
+      </section>
     </div>
     <script src="../script.js"></script>
-</body>
+  </body>
 </html>
