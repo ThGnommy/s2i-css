@@ -1,81 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="theme-color" content="#FCA311" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
     <title>Thomas Brandoli</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="main-container">
+      <section class="menu-container" id="menu-container">
+        <img id="thomas" src="../img/thomas2edit.jpg" alt="me" />
+        <nav>
+          <a href="../index.html">HOME</a>
+          <a href="./works.html">WORKS</a>
+          <a href="./contact.html">CONTACT ME</a>
+        </nav>
+      </section>
 
-        <section class="menu-container" id="menu-container">
-            <img id="thomas" src="../img/thomas.jpg" alt="me" />
-            <nav>
-                <a href="../index.html">HOME</a>
-                <a href="./works.html">WORKS</a>
-                <a href="./contact.html">CONTACT ME</a>
-            </nav>
-        </section>
+      <section class="right-section">
+        <div class="background-area">
+          <ul class="bkg-elements">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
 
-        <section class="right-section">
+        <div class="menu-icon-container" onclick="handleOpenMenu(this)">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
 
-            <div class="background-area">
-                <ul class="bkg-elements">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
+        <h2>GET IN TOUCH</h2>
 
-            <div class="menu-icon-container" onclick="handleOpenMenu(this)">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+        <section class="contact-container">
+          <div class="point-marker">
+            <img
+              src="../img/icons/map-marker-alt-solid.svg"
+              width="75px"
+              height="75px"
+              alt="marker"
+            />
 
-            <h2>GET IN TOUCH</h2>
-
-            <section class="contact-container">
-
-                <div class="point-marker">
-                    <img src="../img/icons/map-marker-alt-solid.svg" width="75px" height="75px" alt="marker">
-
-                    <section>
-                        <p>Italy</p>
-                        <p>Modena</p>
-                        <p>41122</p>
-                    </section>
-
-                </div>
-                
-                <div class="email">
-                    <img src="../img/icons/envelope-solid.svg" width="75px" height="75px" alt="email">
-                    <a href="mailto:th.brandoli@gmail.com" target="_blank" rel="noopener noreferrer">th.brandoli@gmail.com</a>
-                </div>
-                
-                <div class="telegram">
-                    <img src="../img/icons/telegram-brands.svg" width="75px" height="75px" alt="telegram">
-                    <a href="https://t.me/gnommy999" target="_blank" rel="noopener noreferrer">t.me/gnommy999</a>
-                </div>
-                
+            <section>
+              <p>Italy</p>
+              <p>Modena</p>
+              <p>41122</p>
             </section>
+          </div>
 
+          <div class="email">
+            <img
+              src="../img/icons/envelope-solid.svg"
+              width="75px"
+              height="75px"
+              alt="email"
+            />
+            <a
+              href="mailto:th.brandoli@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >th.brandoli@gmail.com</a
+            >
+          </div>
+
+          <div class="telegram">
+            <img
+              src="../img/icons/telegram-brands.svg"
+              width="75px"
+              height="75px"
+              alt="telegram"
+            />
+            <a
+              href="https://t.me/gnommy999"
+              target="_blank"
+              rel="noopener noreferrer"
+              >t.me/gnommy999</a
+            >
+          </div>
         </section>
-
+      </section>
     </div>
     <script src="../script.js"></script>
-</body>
+  </body>
 </html>

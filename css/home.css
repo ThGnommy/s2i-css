@@ -57,6 +57,7 @@ nav a:hover {
   height: 20vw;
   padding: 20px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 hr {
