@@ -346,7 +346,7 @@ h2 {
     cursor: pointer;
     position: absolute;
     top: 2%;
-    left: 2%;
+    left: 2% !important;
   }
 
   .menu-open {
