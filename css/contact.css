@@ -34,11 +34,6 @@ nav {
   align-items: center;
 }
 
-label {
-  /* display: none;
-  position: absolute; */
-}
-
 nav a {
   padding: 5px;
   text-decoration: none;
@@ -80,28 +75,24 @@ h2 {
   font-family: "Oswald", sans-serif;
 }
 
+.contact-container h6 {
+  display: block;
+  color: #fca311;
+  font-family: "Oswald", sans-serif;
+  font-size: xx-large;
+  padding: 0px 50px !important;
+  user-select: none;
+  margin: 1rem;
+}
+
 .contact-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
   overflow: auto;
-  background: #14213d;
 }
-
-/* .contact-container div {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  width: 300px;
-  height: 500px;
-  margin: 10px;
-  padding: 10px;
-  outline: 0px solid #14213d;
-  background: #14213d;
-  transition: outline 300ms ease-in-out;
-} */
 
 .contact-container div {
   display: flex;
@@ -130,12 +121,16 @@ h2 {
   justify-content: center;
   flex-direction: column;
   padding: 1rem;
-  width: 90%;
+  width: 50vw;
+  background: rgba(20, 33, 61, 0.9);
 }
 
 .contact-container form label {
-  display: flex;
-  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.contact-container form input,
+.contact-container form textarea {
+  width: 100%;
 }
 
 form input,
@@ -357,6 +352,10 @@ form textarea {
     width: 40vw !important;
     height: 40vw !important;
   }
+
+  .contact-container h6 {
+    font-size: x-large;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -425,6 +424,10 @@ form textarea {
   #thomas {
     width: 40vw;
     height: 40vw;
+  }
+
+  .contact-container form {
+    width: 80vw;
   }
 }
 
