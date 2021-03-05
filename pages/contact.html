@@ -97,6 +97,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <script defer src='https://www.google.com/recaptcha/api.js'></script>
+    <script defer src="../script.js"></script>
     <title>Thomas Brandoli</title>
   </head>
   <body>
@@ -134,8 +136,12 @@
 
         <h2>GET IN TOUCH</h2>
 
+        <h2>How can I help?</h2>
+
+
         <section class="contact-container">
-          <div class="point-marker">
+          <!-- <div class="point-marker">
+            
             <img
               src="../img/icons/map-marker-alt-solid.svg"
               width="75px"
@@ -179,9 +185,29 @@
               >t.me/gnommy999</a
             >
           </div>
-        </section>
+        </section> -->
+        <form name="contact" netlify>
+          <div>
+          <label>Name</label>
+          <input type="text" name="name" required>
+          </div>
+          <div>
+          <label>Email</label>
+          <input type="email" name="email" required>
+          </div>
+          <div>
+          <label>Message</label>
+          <textarea type="text" name="message" required></textarea>
+          </div>
+
+
+
+          <button type="submit">Send</button>
+          
+          <!-- <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div> -->
+        </form>
       </section>
     </div>
-    <script src="../script.js"></script>
+
   </body>
 </html>

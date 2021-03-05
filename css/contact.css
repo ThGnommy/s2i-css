@@ -35,8 +35,8 @@ nav {
 }
 
 label {
-  display: none;
-  position: absolute;
+  /* display: none;
+  position: absolute; */
 }
 
 nav a {
@@ -86,9 +86,10 @@ h2 {
   align-items: center;
   flex-wrap: wrap;
   overflow: auto;
+  background: #14213d;
 }
 
-.contact-container div {
+/* .contact-container div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -100,6 +101,46 @@ h2 {
   outline: 0px solid #14213d;
   background: #14213d;
   transition: outline 300ms ease-in-out;
+} */
+
+.contact-container div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.contact-container button {
+  background-color: #fca311;
+  border: none;
+  outline: 0;
+  color: white;
+  width: 5rem;
+  height: 2.5rem;
+}
+
+.contact-container button:active {
+  transform: scale(0.95);
+}
+
+.contact-container form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 90%;
+}
+
+.contact-container form label {
+  display: flex;
+  align-items: flex-start;
+}
+
+form input,
+form textarea {
+  outline: 0;
 }
 
 .contact-container > div:hover {
