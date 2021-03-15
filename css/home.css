@@ -140,6 +140,21 @@ p.home-rs {
   margin-bottom: 10px;
 }
 
+.cv {
+  border: none;
+  background-color: #000000;
+  transition: transform 300ms;
+}
+
+.cv a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cv:hover {
+  transform: scale(1.05);
+}
+
 /*#region Background Animation */
 
 .background-area {
