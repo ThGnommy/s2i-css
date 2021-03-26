@@ -76,7 +76,7 @@ hr {
   text-decoration: underline #000000;
 }
 
-.menu-btn {
+/* .menu-btn {
   position: absolute;
   display: none;
   width: 40px;
@@ -84,7 +84,7 @@ hr {
   top: 5%;
   left: 5%;
   background-color: tomato;
-}
+} */
 
 .right-section {
   display: flex;

@@ -1,0 +1,121 @@
+@use "reset";
+@use './layout';
+@use './colors';
+
+body {
+  @include layout.baseLayout;
+}
+
+.main-container {
+  @include layout.main-container;
+}
+
+.menu-container {
+  @include layout.menu-container;
+}
+
+.right-section {
+  @include layout.right-section;
+
+  & > * {
+    padding: 20px;
+  }
+}
+
+nav {
+  @include layout.nav-bar;
+
+  a {
+    padding: 5px;
+    text-decoration: none;
+    color: #e5e5e5;
+    background: linear-gradient(
+      to right,
+      colors.$secondary_color,
+      colors.$secondary_color 50%,
+      colors.$primary_color 50%
+    );
+    background-size: 400% 400%;
+    background-position: 100%;
+    transition: background-position 500ms ease-out;
+  }
+
+  a:hover {
+    background-position: 0 100%;
+  }
+}
+
+#thomas {
+  width: 20vw;
+  height: 20vw;
+  padding: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+hr {
+  padding: 0 !important;
+  margin: 10px 0;
+  width: 50vw !important;
+  border: 1px solid black;
+}
+
+.code {
+  color: #000000;
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline #000000;
+}
+
+h2 {
+  display: block;
+  color: #e5e5e5;
+  font-family: "Oswald", sans-serif;
+  font-size: xxx-large;
+  background-color: colors.$secondary_color;
+  padding: 0px 50px !important;
+  user-select: none;
+}
+
+p.home-rs {
+  color: #fca311;
+}
+
+.icons-container {
+  @include layout.icons-container;
+  a {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: margin-bottom 0.4s;
+  }
+
+  a:hover {
+    margin-bottom: 10px;
+  }
+}
+
+.facebook,
+.linkedin,
+.github {
+  width: 50px;
+  height: 50px;
+}
+
+.cv {
+  border: none;
+  background-color: #000000;
+  transition: transform 300ms;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
